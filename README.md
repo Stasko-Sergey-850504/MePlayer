@@ -1,2 +1,5 @@
-# Tahan-Cafe
-# This is a simple web project written in Java, CSS, HTML, MySQL. The project is an Internet cafe.
+# QtMediaPlayer
+
+This is a simple media player written in C++ using Qt framework.
+Software Requerements Specification in russian is [here](https://github.com/Stasko-Sergey-850504/MePlayer/tree/master/SRS_ru.md).
+
