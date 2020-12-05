@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" binding="early" name="state_2" qt:editorversion="4.8.0" xmlns:qt="http://www.qt.io/2015/02/scxml-ext" initial="Main window with video opened">
+    <qt:editorinfo initialGeometry="303.90;112.18;-20;-20;40;40"/>
+    <state id="Main window with video opened">
+        <qt:editorinfo geometry="226.31;245.77;-60;-50;275.17;100" scenegeometry="226.31;245.77;166.31;195.77;275.17;100"/>
+        <transition type="external" event="Press button &quot;Color Options&quot;" target="Color Options window">
+            <qt:editorinfo movePoint="6.12;1.02"/>
+        </transition>
+    </state>
+    <state id="Color Options window">
+        <qt:editorinfo geometry="266.59;414.03;-60;-50;194.61;100" scenegeometry="266.59;414.03;206.59;364.03;194.61;100"/>
+        <transition type="external" event="Set options and press button &quot;OK&quot;" target="Main window with changed videoimage"/>
+    </state>
+    <state id="Main window with changed videoimage">
+        <qt:editorinfo geometry="205.92;592.49;-60;-50;315.96;100" scenegeometry="205.92;592.49;145.92;542.49;315.96;100"/>
+        <transition type="external" target="Final_1"/>
+    </state>
+    <final id="Final_1">
+        <qt:editorinfo geometry="303.90;730.16;-20;-20;40;40" scenegeometry="303.90;730.16;283.90;710.16;40;40"/>
+    </final>
+</scxml>

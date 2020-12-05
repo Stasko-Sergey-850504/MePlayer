@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" binding="early" name="state_4" qt:editorversion="4.8.0" xmlns:qt="http://www.qt.io/2015/02/scxml-ext" initial="Main window">
+    <qt:editorinfo initialGeometry="305.93;100.96;-20;-20;40;40"/>
+    <state id="Main window">
+        <qt:editorinfo geometry="305.93;222.31;-60;-50;120;100" scenegeometry="305.93;222.31;245.93;172.31;120;100"/>
+        <transition type="external" event="Press listbox button &quot;1.0x&quot;" target="List of available speed values"/>
+    </state>
+    <state id="List of available speed values">
+        <qt:editorinfo geometry="369.75;389.56;-187.64;-50;247.64;100" scenegeometry="369.75;389.56;182.11;339.56;247.64;100"/>
+        <transition type="external" event="Select one of three available values" target="Main window with changed play speed"/>
+    </state>
+    <state id="Main window with changed play speed">
+        <qt:editorinfo geometry="401.36;556.80;-250.86;-50;310.86;100" scenegeometry="401.36;556.80;150.50;506.80;310.86;100"/>
+        <transition type="external" target="Final_1"/>
+    </state>
+    <final id="Final_1">
+        <qt:editorinfo geometry="305.93;693.45;-20;-20;40;40" scenegeometry="305.93;693.45;285.93;673.45;40;40"/>
+    </final>
+</scxml>

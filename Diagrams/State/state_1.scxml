@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" binding="early" name="state_1" qt:editorversion="4.8.0" xmlns:qt="http://www.qt.io/2015/02/scxml-ext" initial="Main window">
+    <qt:editorinfo initialGeometry="370.18;109.50;-20;-20;40;40"/>
+    <state id="Open file window">
+        <qt:editorinfo geometry="411.05;396.39;-141.75;-50;201.75;100" scenegeometry="411.05;396.39;269.30;346.39;201.75;100"/>
+        <transition type="external" event="Search file and press button &quot;Open&quot;" target="Main window with file opened"/>
+    </state>
+    <state id="Main window">
+        <qt:editorinfo geometry="370.18;235.56;-60;-50;120;100" scenegeometry="370.18;235.56;310.18;185.56;120;100"/>
+        <transition type="external" event="Button &quot;Open&quot; was pressed" target="Open file window"/>
+    </state>
+    <state id="Main window with file opened">
+        <qt:editorinfo geometry="308.27;568.22;-60;-50;243.82;100" scenegeometry="308.27;568.22;248.27;518.22;243.82;100"/>
+        <transition type="external" target="Final_1"/>
+    </state>
+    <final id="Final_1">
+        <qt:editorinfo geometry="370.18;705;-20;-20;40;40" scenegeometry="370.18;705;350.18;685;40;40"/>
+    </final>
+</scxml>

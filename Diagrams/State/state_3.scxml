@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scxml xmlns="http://www.w3.org/2005/07/scxml" version="1.0" binding="early" name="state_3" qt:editorversion="4.8.0" xmlns:qt="http://www.qt.io/2015/02/scxml-ext" initial="Main window with video being played">
+    <qt:editorinfo initialGeometry="314.09;114.21;-20;-20;40;40"/>
+    <state id="Main window with video being played">
+        <qt:editorinfo geometry="412.07;251.88;-255.96;-50;315.96;100" scenegeometry="412.07;251.88;156.11;201.88;315.96;100"/>
+        <transition type="external" event="Press button &quot;Fullscreen&quot;" target="Video is played fullscreen"/>
+    </state>
+    <state id="Video is played fullscreen">
+        <qt:editorinfo geometry="365.16;431.37;-162.14;-50;222.14;100" scenegeometry="365.16;431.37;203.02;381.37;222.14;100"/>
+        <transition type="external" target="Final_1"/>
+    </state>
+    <final id="Final_1">
+        <qt:editorinfo geometry="314.09;577.20;-20;-20;40;40" scenegeometry="314.09;577.20;294.09;557.20;40;40"/>
+    </final>
+</scxml>
